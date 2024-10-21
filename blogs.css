@@ -1,0 +1,74 @@
+.break h1 {
+  margin: 50px 0;
+  text-align: center;
+}
+/* Second Part */
+.second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.box {
+  padding: 10px 10px;
+  width: 350px;
+  height: 420px;
+  background-color: #dcd9e1;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-20px); /* Moves the box up slightly */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+.image1 {
+  width: 350;
+  height: 200px;
+  margin-top: 0;
+}
+.image1 img {
+  width: 350px;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+.box h3 {
+  margin-top: 10px;
+}
+.box p {
+  margin-top: 10px;
+}
+.box h4 {
+  margin-top: 20px;
+}
+
+/* Medai Query */
+
+@media (max-width: 768px) {
+  .break h1 {
+    font-size: 30px;
+  }
+  .second {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .box {
+    width: 250px;
+    padding: 20px 20px;
+    height: 530px;
+  }
+
+  .image1 img {
+    width: 250px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+.container {
+  margin: 15px;
+}
+
+/* NavBar */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  cursor: pointer;
+}
+.logo {
+  cursor: pointer;
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  cursor: pointer;
+}
+
+.nav-link li:hover {
+  color: #8353e2;
+}
+.btn {
+  padding: 9px 20px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: #00bdd6;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #8353e2;
+  color: white;
+}
+
+/* main body section */
+.form-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.form {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 200px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+}
+.form h1 {
+  padding: 10px 0;
+}
+.name,
+.email,
+.question,
+.meditation {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+input {
+  width: 50vmin;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  border: 1px solid grey;
+}
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+.meditation select {
+  width: 53vmin;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  border: 1px solid grey;
+}
+
+.question input {
+  min-height: 150px;
+}
+/* Footer */
+.footer {
+  margin: 0 137px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.div {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+.social-location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.media {
+  display: flex;
+  gap: 15px;
+}

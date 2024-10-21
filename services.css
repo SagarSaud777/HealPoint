@@ -1,0 +1,86 @@
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin: 40px 0;
+}
+
+.self-assessment {
+  display: flex;
+  align-items: center;
+  gap: 260px;
+}
+
+.assessment {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.assessment p {
+  width: 340px;
+}
+.assessment button {
+  padding: 9px 20px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: #8353e2;
+  color: white;
+  width: 225px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.assessment button:hover {
+  background-color: #00bdd6;
+  color: black;
+}
+.self-assessment img {
+  width: 450px;
+}
+/* Input and button styles for the form */
+form input,
+form button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Submit button styles */
+.btn-submit {
+  background-color: #5ac1d6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #4aa3b4;
+}
+
+/* Media Query for the responsive */
+
+@media (max-width: 767px) {
+  .self-assessment {
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+  }
+  .self-assessment img {
+    width: 350px;
+  }
+  .assessment {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

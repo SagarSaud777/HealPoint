@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+
+</head>
+
+<body>
+    <main class="container">
+        <!-- NavBar -->
+        <div class="nav">
+            <div class="logo" id="home">
+                <p>Heal<span style="color: #00BDD6;">Point</span></p>
+            </div>
+            <ul class="nav-link">
+                <li id="services">SERVICES</li>
+                <li id="blogs">BLOGS</li>
+                <li id="community">COMMUNITY</li>
+                <li id="contact">CONTACT US</li>
+            </ul>
+            <button class="btn">Let's Talk</button>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz">
+            <h1>Mental Well-being Quiz</h1>
+            <div class="quiz-container">
+
+                <div class="question">
+                    <p>Question 1. How often do you feel overwhelmed by your daily tasks or responsibilities?</p>
+                    <div class="options">
+                        <div>
+
+                            <input type="radio" id="q1-a" name="q1" value="frequently">
+                            <label for="q1-a">A) Frequently</label>
+                        </div>
+                        <div>
+
+                            <input type="radio" id="q1-b" name="q1" value="rarely">
+                            <label for="q1-b">B) Rarely</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>Question 2. Do you find it difficult to fall asleep or stay asleep at night?</p>
+                    <div class="options">
+                        <div>
+
+                            <input type="radio" id="q2-a" name="q2" value="yes">
+                            <label for="q2-a">A) Yes, often</label>
+                        </div>
+                        <div>
+
+                            <input type="radio" id="q2-b" name="q2" value="no">
+                            <label for="q2-b">B) No, rarely</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>Question 3. How often do you feel happy and satisfied with your life?</p>
+                    <div class="options">
+                        <div>
+
+                            <input type="radio" id="q3-a" name="q3" value="most">
+                            <label for="q3-a">A) Most of the time</label>
+                        </div>
+
+                        <div>
+
+                            <input type="radio" id="q3-b" name="q3" value="occasionally">
+                            <label for="q3-b">B) Occasionally or rarely</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>Question 4. Do you feel comfortable talking about your emotions with others?</p>
+                    <div class="options">
+                        <div>
+
+                            <input type="radio" id="q4-a" name="q4" value="yes">
+                            <label for="q4-a">A) Yes, I open up easily</label>
+                        </div>
+                        <div>
+
+                            <input type="radio" id="q4-b" name="q4" value="no">
+                            <label for="q4-b">B) No, I find it challenging</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>Question 5. How do you usually react to stressful situations?</p>
+                    <div class="options">
+                        <div>
+
+                            <input type="radio" id="q5-a" name="q5" value="calm">
+                            <label for="q5-a">A) I remain calm and find solutions</label>
+                        </div>
+                        <div>
+
+                            <input type="radio" id="q5-b" name="q5" value="anxious">
+                            <label for="q5-b">B) I feel anxious or avoid the situation</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+            </div>
+        </div>
+
+
+    </main>
+    <script src="script.js"></script>
+    <script src="quiz.js"></script>
+    <script src="questions.js"></script>
+</body>
+
+</html>

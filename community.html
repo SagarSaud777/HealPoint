@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="community.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+
+</head>
+
+<body>
+    <main class="container">
+        <!-- NavBar -->
+
+        <div class="nav">
+            <div class="logo" id="home">
+                <p>Heal<span style="color: #00BDD6;">Point</span></p>
+            </div>
+            <ul class="nav-link">
+                <li id="services">SERVICES</li>
+                <li id="blogs">BLOGS</li>
+                <li id="community">COMMUNITY</li>
+                <li id="contact">CONTACT US</li>
+
+            </ul>
+            <button class="btn">Let's Talk</button>
+        </div>
+
+        <!--Community -->
+        <div class="community">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2>Anonymous Chat
+                    </h2>
+                </div>
+                <div class="chat-body" id="chatBody">
+                    <div class="message received">
+                        <p>Hello! How can I assist you today?</p>
+                        <span class="time">10:00 AM</span>
+                    </div>
+                    <div class="message sent">
+                        <p>Hi! I need some help with mental health related issues.</p>
+                        <span class="time">10:01 AM</span>
+                    </div>
+                </div>
+                <div class="chat-footer">
+                    <input type="text" id="messageInput" placeholder="Type your message...">
+                    <button type="button" id="sendMessageButton">Send</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="community.js"></script>
+</body>
+
+</html>

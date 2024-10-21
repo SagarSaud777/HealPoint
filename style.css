@@ -1,0 +1,157 @@
+/* HeroSection */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 56px;
+  margin: 63px 20px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left h1 {
+  color: black;
+  font-size: 45px;
+}
+.left p {
+  font-size: 18px;
+}
+
+.right img {
+  width: 600px;
+}
+
+/* SERVICES */
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.services-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+.services-left h1 {
+  color: black;
+  font-size: 45px;
+}
+
+/* FOR THE BOXES */
+.services-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* BOX */
+
+.box {
+  border-radius: 8px;
+  padding: 20px 15px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.box:hover {
+  transform: translateY(-20px); /* Moves the box up slightly */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7); /* Darker, larger shadow */
+}
+.box h4 {
+  color: black;
+}
+.box p {
+  text-align: center;
+}
+.box-text {
+  font-size: 14px;
+}
+.box img {
+  width: 100px;
+}
+.box-btn {
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Community Section */
+
+.community {
+  background: linear-gradient(135deg, #048ea1, #5f32b8);
+  min-height: 20vh;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  margin: 100px 55px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.community:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(315deg, #048ea1, #5f32b8);
+}
+.com-text {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 15px;
+  color: white;
+}
+
+.com-btn {
+  padding: 9px 40px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .left h1 {
+    font-size: 2rem;
+  }
+
+  .right img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .services-right {
+    flex-direction: column;
+  }
+
+  .community {
+    min-height: 20vh;
+    width: 100%;
+    margin: 60px auto;
+  }
+}

@@ -1,0 +1,51 @@
+/* main body section */
+.form-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.form {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 200px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+}
+.form h1 {
+  padding: 10px 0;
+}
+.name,
+.email,
+.question {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+input {
+  width: 50vmin;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  border: 1px solid grey;
+}
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+textarea {
+  min-height: 80px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border: 1px solid grey;
+}
+
+.question input {
+  min-height: 150px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="bookAppointment.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+
+</head>
+
+<body>
+    <main class="container">
+        <!-- NavBar -->
+        <div class="nav">
+            <div class="logo" id="home">
+                <p>Heal<span style="color: #00BDD6;">Point</span></p>
+            </div>
+            <ul class="nav-link">
+                <li id="services">SERVICES</li>
+                <li id="blogs">BLOGS</li>
+                <li id="community">COMMUNITY</li>
+                <li id="contact">CONTACT US</li>
+            </ul>
+            <button class="btn">Let's Talk</button>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="form-div">
+
+            <form action="" class="form">
+                <h1>Book an appointment with the therapist</h1>
+                <div class="name">
+                    <label for="">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="therapist">
+                    <label for="therapist">Your Favourite Therapist</label>
+                    <select id="therapist" required>
+                        <option value="" disabled selected>Select your therapist</option>
+                        <option value="dr-james">Dr. James Miller</option>
+                        <option value="dr-susan">Dr. Susan Parker</option>
+                        <option value="dr-williams">Dr. Mark Williams</option>
+                        <option value="dr-johnson">Dr. Emily Johnson</option>
+                        <option value="dr-robinson">Dr. Sarah Robinson</option>
+                    </select>
+                </div>
+                <label for="date">Date</label>
+                <input type="date" id="date" />
+
+                <label for="time">Time</label>
+                <input type="time" id="time" />
+
+                <div class="submit-btn">
+                    <button class="hero-btn" type="submit">Submit</button>
+                </div>
+
+
+            </form>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+    <script src="bookedTherapy.js"></script>
+</body>
+
+</html>
